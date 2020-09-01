@@ -1,0 +1,13 @@
+<div class="game">
+  <ng-container *ngIf="winner; then showWinner; else showGameProgress"></ng-container>
+  <ng-template #showWinner
+    ><p>{{ winner }} is the Winner!</p></ng-template
+  >
+  <ng-template #showGameProgress><p>Game in progress...</p></ng-template>
+
+  <app-board
+    [ngClass]="{ disable: !!winner }"
+    [squares]="squares"
+    (onSquareClick)="onSquareClickHandler($event)"
+  ></app-board>
+</div>

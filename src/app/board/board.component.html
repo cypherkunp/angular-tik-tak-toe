@@ -1,0 +1,54 @@
+<div class="board">
+  <p>Next Player is {{ xIsNext ? 'O' : 'X' }}</p>
+  <div class="board-row">
+    <app-square
+      [value]="squares[0]"
+      [squareId]="0"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+    <app-square
+      [value]="squares[1]"
+      [squareId]="1"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+    <app-square
+      [value]="squares[2]"
+      [squareId]="2"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+  </div>
+  <div class="board-row">
+    <app-square
+      [value]="squares[3]"
+      [squareId]="3"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+    <app-square
+      [value]="squares[4]"
+      [squareId]="4"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+    <app-square
+      [value]="squares[5]"
+      [squareId]="5"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+  </div>
+  <div class="board-row">
+    <app-square
+      [value]="squares[6]"
+      [squareId]="6"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+    <app-square
+      [value]="squares[7]"
+      [squareId]="7"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+    <app-square
+      [value]="squares[8]"
+      [squareId]="8"
+      (onSquareClick)="onSquareClickHandler($event)"
+    ></app-square>
+  </div>
+</div>
